@@ -10,34 +10,59 @@
 <body>
   <h1>Projek X-7</h1>
 
-  <div class="prj" id="prj1">
-    <img
-      src="https://images.unsplash.com/photo-1452716726610-30ed68426a6b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w5MDM2MjB8fGVufDB8fHx8fA%3D%3D"
-      style="width: 15rem;" alt="">
-    <h3>Projek 1</h3>
-    <p>Kearifan lokal</p>
-  </div>
+  <a href="pages/project-1/page.html">
+    <div class="prj" id="prj1">
+      <img
+        src="https://images.unsplash.com/photo-1452716726610-30ed68426a6b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w5MDM2MjB8fGVufDB8fHx8fA%3D%3D"
+        style="width: 15rem;" alt="">
+      <h3>Projek 1</h3>
+      <p>Kearifan lokal</p>
+    </div>
+  </a>
+
+  <a href="pages/project-2/page.html">
+    <div class="prj" id="prj2">
+      <img
+        src="https://images.unsplash.com/photo-1452716726610-30ed68426a6b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w5MDM2MjB8fGVufDB8fHx8fA%3D%3D"
+        style="width: 15rem;" alt="">
+      <h3>Projek 2</h3>
+      <p>Gaya hidup berkelanjutan</p>
+    </div>
+  </a>
 
 </body>
 
 <style>
+  :root {
+    --bg: #f0cf8e;
+    --fg: #f6edcd;
+    --text: #655057;
+  }
+
   * {
     box-sizing: border-box;
-    background-color: rgba(255, 0, 0, 0.1);
   }
 
   body {
     height: 100vh;
     width: 100vw;
     text-align: center;
+    background-color: var(--bg);
+    color: var(--text);
   }
 
   .prj {
     display: flex;
-    padding: 0;
+    padding: 1rem;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    background-color: var(--fg);
+    color: var(--text);
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>
 
