@@ -8,9 +8,83 @@
 </head>
 
 <body>
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/SKcSGeWrJv8">
-  </iframe>
+  <header>
+    <h1>Gaya Hidup Berkelanjutan</h1>
+  </header>
+
+  <main>
+
+    <div class="group">
+      <h2>Kelas</h2>
+      <video width="100%" controls>
+        <source src="vid/class.mkv">
+      </video>
+    </div>
+
+    <div class="group">
+      <h2>Pojok Literasi</h2>
+      <video width="100%" controls>
+        <source src="vid/pojok.mp4">
+      </video>
+    </div>
+
+    <div class="group">
+      <h2>Daur Ulang</h2>
+      <video width="100%" controls>
+        <source src="vid/dekor.mp4">
+      </video>
+    </div>
+
+    <div class="group">
+      <h2>Poster</h2>
+      <video width="100%" controls>
+        <source src="vid/poster.mp4">
+      </video>
+    </div>
+
+  </main>
 
 </body>
+<style>
+  :root {
+    --bg: #f0cf8e;
+    --fg: #f6edcd;
+    --text: #655057;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--fg);
+    margin: 2rem;
+    border-radius: 2%;
+  }
+
+  .group {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: var(--fg);
+    color: var(--text);
+    border-radius: 2%;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
 
 </html>
